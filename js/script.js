@@ -8,14 +8,11 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
+ 
+for (let i = 0; i < 2; i++){
+    const a = prompt('Cколько фильмов вы уже просмотрели',''), 
+    b = prompt('Какая оценка фильма','');
 
-const a = prompt('Cколько фильмов вы уже просмотрели',''), 
-      b = prompt('Какая оценка фильма',''),
-      c = prompt('Cколько фильмов вы уже просмотрели',''),
-      d = prompt('Какая оценка фильма','');
-
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[a] = d;
-
+    personalMovieDB.movies[a] = b;
+ }
 console.log(personalMovieDB);
