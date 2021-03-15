@@ -1,18 +1,13 @@
 "use strict";
-const numberOfFilms =+ prompt('сколько фильмов вы уже просмотрели','');
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
- 
-for (let i = 0; i < 2; i++){
-    const a = prompt('Cколько фильмов вы уже просмотрели',''), 
-    b = prompt('Какая оценка фильма','');
+let num = 20; //Глобальная переменная
 
-    personalMovieDB.movies[a] = b;
- }
-console.log(personalMovieDB);
+function showFirstMassage(text) {
+    console.log(text);
+    let num = 4; //Эта функция только будет использываться локально
+
+    console.log (num);
+}
+
+showFirstMassage("Приветствие!");
+console.log(num); //Глобальная переменная выводим только её
