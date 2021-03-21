@@ -1,35 +1,23 @@
 "use strict";
 
-if (4 == 4) {
-    console.log('Да');
-} else {
-    console.log('Ошибка');
+let num = 50;
+
+while (num <= 55) {
+    console.log(num);
+    num++;
+    
 }
 
-const num = 50;
-
-if (num <49){
-    console.log('Ошибка');
-} else if (num > 100) {
-    console.log('Много');
-} else {
-    console.log('Да');
+do {
+    console.log(num);
+    num++;
 }
 
-(num === 50) ? console.log('да') : console.log('Ошибка');
+while (num < 55);
 
-switch (num) {
-    case 49: 
-    console.log('Неверно');
-    break;
-    case 100: 
-    console.log('Неверно');
-    break;
-    case 50: 
-    console.log('В точку');
-    break;
-
-    default:
-        console.log('не в этот раз');
+for (let i = 1; i < 8; i++) {
+    if (i === 6){
         break;
+    }
+    console.log(i);
 }
