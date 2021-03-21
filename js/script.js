@@ -1,13 +1,26 @@
 "use strict";
 
-let num = 20; //Глобальная переменная
+/*
+Создаём полное приложение со всеми функциями.
+Создаём обьекты.
+*/
 
-function showFirstMassage(text) {
-    console.log(text);
-    let num = 4; //Эта функция только будет использываться локально
+const number0Films = prompt('Сколько фильмов вы уже просмотрели', '');
 
-    console.log (num);
-}
+const personalMovieDB = {
+    count: number0Films,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat:false
+};
 
-showFirstMassage("Приветствие!");
-console.log(num); //Глобальная переменная выводим только её
+const a = prompt('Один из последних просмотреных фильмов?'),
+b = prompt('На сколько его оцените?'),
+c = prompt('Один из последних просмотреных фильмов?'),
+d = prompt('На сколько его оцените?');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
