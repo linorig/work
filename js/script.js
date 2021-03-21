@@ -1,26 +1,35 @@
 "use strict";
 
-/*
-Создаём полное приложение со всеми функциями.
-Создаём обьекты.
-*/
+if (4 == 4) {
+    console.log('Да');
+} else {
+    console.log('Ошибка');
+}
 
-const number0Films = prompt('Сколько фильмов вы уже просмотрели', '');
+const num = 50;
 
-const personalMovieDB = {
-    count: number0Films,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat:false
-};
+if (num <49){
+    console.log('Ошибка');
+} else if (num > 100) {
+    console.log('Много');
+} else {
+    console.log('Да');
+}
 
-const a = prompt('Один из последних просмотреных фильмов?'),
-b = prompt('На сколько его оцените?'),
-c = prompt('Один из последних просмотреных фильмов?'),
-d = prompt('На сколько его оцените?');
+(num === 50) ? console.log('да') : console.log('Ошибка');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+switch (num) {
+    case 49: 
+    console.log('Неверно');
+    break;
+    case 100: 
+    console.log('Неверно');
+    break;
+    case 50: 
+    console.log('В точку');
+    break;
 
-console.log(personalMovieDB);
+    default:
+        console.log('не в этот раз');
+        break;
+}
