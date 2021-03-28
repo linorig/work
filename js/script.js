@@ -1,23 +1,23 @@
 "use strict";
+const str = "test";
+const arr = [1, 2, 4];
 
-let num = 50;
+console.log(str[0] = 'd');
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
 
-while (num <= 55) {
-    console.log(num);
-    num++;
-    
-}
+const fruit = "Some";
 
-do {
-    console.log(num);
-    num++;
-}
+console.log(fruit.indexOf("m"));
 
-while (num < 55);
+const logg = "Hello word";
+console.log(logg.slice(1));
+console.log(logg.substring(5, 6));
+console.log(logg.substr(5, 6));
 
-for (let i = 1; i < 8; i++) {
-    if (i === 6){
-        break;
-    }
-    console.log(i);
-}
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = "12.2px";
+console.log(parseInt(test));
+console.log(parseFloat(test));
