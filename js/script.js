@@ -1,23 +1,32 @@
 "use strict";
-const str = "test";
-const arr = [1, 2, 4];
 
-console.log(str[0] = 'd');
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
+const option = {
+    name:'Alecs',
+    with:1200,
+    heighr:1200,
+    color:{
+        border:'bloor',
+        bg:'red'
+    }
+};
 
-const fruit = "Some";
+console.log(Object.keys(option).length);
+//console.log(option["color"]["border"]);
 
-console.log(fruit.indexOf("m"));
+let counter = 0;
+for (let key in option){
+    if(typeof(option[key]) === 'object'){
+        for (let i in option[key]){
+            console.log(`Свойство ${key} имеет значение ${option[key][i]}`);
+            counter++;
+        
+        }
 
-const logg = "Hello word";
-console.log(logg.slice(1));
-console.log(logg.substring(5, 6));
-console.log(logg.substr(5, 6));
+    }else{
+        console.log(`Свойство ${key} имеет значение ${option[key]}`);
+    counter++;
+    }
+    
+}
 
-const num = 12.2;
-console.log(Math.round(num));
-
-const test = "12.2px";
-console.log(parseInt(test));
-console.log(parseFloat(test));
+console.log(counter);
